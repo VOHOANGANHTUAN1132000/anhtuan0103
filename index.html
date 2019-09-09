@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+    
+    <link href="css/main.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+    
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
+  <link rel="stylesheet" href="css/style.css">
+    
+    
+    
+</head>
+
+<body>
+    
+	<div id="wrapper">
+        <div class="header">
+            <div class="logo">
+                <img src="images/icon_03.gif">
+            </div>
+            <div class="menu">
+                    <ul>
+                        <li><a href="#">HOME</a></li>
+                         <li><a href="#">SERVICE</a></li>
+                         <li><a href="#">HISTORY</a></li>
+                         <li><a href="#">NEWS</a></li>
+                         <li><a href="#">ABOUT US</a></li>
+                    </ul>
+            </div>
+        
+        
+        
+        </div>
+    
+        <div class="slider">
+            
+            
+            <div class="w3-content w3-display-container" style="max-width:1920px">
+  <img class="mySlides" src="images/icon_06.gif" style="width:100%">
+  <img class="mySlides" src="images/002.gif" style="width:100%">
+  <img class="mySlides" src="images/003.gif" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+            
+    </div>        
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+        
+        
+        <div class="content">
+            <div class="text">WHAT WE OFFER
+			</div>
+            
+            <div class="content01">
+            
+                <div class="content01a">
+                    <img src="images/icon_09.gif">
+                    NATURAL STONE
+                </div>
+            
+                <div class="content01b">
+                    <img src="images/icon_11.gif">
+                    HARD WOOD
+                </div>
+            </div>
+            
+            <div class="clear"></div>
+			
+			
+			
+            
+            <div class="content02">
+                
+                <div class="content02a"><img src="images/icon_15.gif">
+				</div>
+                 <div class="content02a"><img src="images/icon_17.gif">
+				</div>
+                 <div class="content02a"><img src="images/icon_18.gif">
+				</div>
+				
+				
+            
+            
+            
+            </div>
+			
+			<div class="text01">TRENDING PRODUCTS</div>
+			
+			
+            <div class="content03">
+				<div class="content03a"><img src="images/icon_25.gif">
+				</div>
+				<div class="content03b"><img src="images/icon_32.gif">
+				</div>
+				<div class="content03b"><img src="images/icon_31.gif">
+				</div>
+				<div class="content03b"><img src="images/icon_27.gif">
+				</div>
+				<div class="content03b"><img src="images/icon_24.gif">
+				</div>
+			</div>
+			
+		<div class="content04">
+			<div class="content04a"><img src="images/icon_37.gif">
+			</div>
+			<div class="content04a"><img src="images/icon_39.gif">
+			</div>
+			<div class="content04a"><img src="images/icon_41.gif"
+			</div>
+			
+		</div>
+
+		</div>	
+			
+<div class="content05"><img src="images/icon_46.gif">
+	  </div>	
+		
+<div class="text01">WHAT PEOPLE SAY</div>	
+		
+<div class="slider01"><img src="images/icon_50.gif"></div>		
+		
+<div class="text01">TEAM OF PROFESSIONALS </div>		
+		
+		
+			
+			
+			
+		<div class="content06">
+			<div class="content06a"><img src="images/icon_57.gif"></div>
+			<div class="content06a"><img src="images/icon_55.gif"></div>
+			<div class="content06a"><img src="images/icon_53.gif"></div>
+			
+		</div>
+		<div class="text01">LATEST POST</div>
+			
+			
+	  <div class="content06">
+			<div class="content06b"><img src="images/icon_64.gif"></div>
+			<div class="content06b"><img src="images/icon_63.gif"></div>
+			<div class="content06b"><img src="images/icon_62.gif"></div>
+		</div>
+		
+	<div class="footer"><img src="images/icon_68.gif"
+		
+		</div>	
+		
+		
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+</div>		
+	
+        
+        
+        
+        
+        
+        
+    
+    
+    <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+    
+    
+    
+    
+    <a href="#" class="cd-top text-replace js-cd-top" style="background-color: aqua">Top</a>
+	<script src="js/util.js"></script> <!-- util functions included in the CodyHouse framework -->
+  <script src="js/main.js"></script>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>
